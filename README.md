@@ -208,7 +208,7 @@ secret = "mysecret"
 # The salt must be a hex encoded byte array.
 salt = "deadbeef"
 
-encryptor = SecretKeys::Encryptor.from_passowrd(secret, salt)
+encryptor = SecretKeys::Encryptor.from_password(secret, salt)
 
 encrypted = encryptor.encrypt("foobar") # => "$AES$:345kjwertE345E..."
 encryptor.decrypt(encrypted) # => "foobar"
